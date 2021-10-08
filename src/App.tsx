@@ -7,6 +7,7 @@ import { Room } from './pages/Room';
 
 import {AuthContextProvider} from './contexts/AuthContext'
 import { AdminRoom } from './pages/AdminRoom';
+import { UserProfile } from './pages/UserProfile';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/rooms/new"  component={NewRoom}></Route>
         <Route path="/rooms/:id"   component={Room}></Route>
         <Route path="/admin/rooms/:id"   component={AdminRoom}></Route>
+        <Route path="/profile"  component={UserProfile}></Route>
 
         </Switch>
         </AuthContextProvider>
